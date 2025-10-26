@@ -244,12 +244,13 @@
             <span>- Siti, Karyawan</span>
         </div>
     </section>
-    <!-- Order Form -->
+   <!-- Order Form -->
     <section id="order">
         <h2>Form Pemesanan</h2>
         <form>
+            <label>Nama:</label>
             <input type="text" name="name" placeholder="Nama Lengkap" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <label>Jenis Tugas:</label>
             <select name="service" required>
                 <option value="" disabled selected>Pilih Layanan</option>
                 <option value="school">Tugas Harian</option>
@@ -264,6 +265,21 @@
             <input type="date" id="deadline" placeholder="deadline (Tanggal/Bulan/Tahun)" required>
             <textarea name="details" rows="4" placeholder="Detail Tugas" required></textarea>
             <button type="submit">Kirim Pesanan</button>
+        <script>
+            let nama = document.getElementById("nama").value;
+            let service = document.getElementById("service").value;
+            let deadline = document.getElementById("deadline").value;
+            let details = document.getElementById("details").value;
+
+            let pesan = `Halo, saya ingin memesan jasa joki tugas dengan detail berikut:
+            %0A%0ANama: ${nama}%0A
+            Jenis Tugas: ${service}%0A
+            Deadline: ${deadline}%0A
+            Detail Tugas: ${details}`;
+
+            let nomor = "6287856141118"; // Ganti dengan nomor WhatsApp tujuan
+            let linkWA = `https://wa.me/${nomor}?text=${pesan}`;
+        </script>
         </form>
     </section>
     <!-- Contact -->
