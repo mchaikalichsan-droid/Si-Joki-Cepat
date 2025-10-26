@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Joki Cepat - Jasa Joki Tugas Cepat dan Terpercaya</title>
+    <style>
+        :root {
+            --blue: #0b5ed7;
+            --dark-blue: #0b2f66;
+            --orange: #ff7a18;
+            --light-bg: #f9fafc;
+            --text-dark: #222;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: "poppins", sans-serif;}
+        body {
+            background: var(--light-bg);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+        header {
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: var(--blue);
+            font-size: 22px;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--orange);
+        
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        /* Hero Section */
+        #home {
+            text-align: center;
+            background: linear-gradient(135deg, var(--blue), var(--orange));
+            color: white;
+            padding: 100px 20px;
+            border-radius: 0 0 60px 60px;
+        }
+        #home h2 {font-size: 36px; margin-bottom: 20px;}
+        #home p {font-size: 18px; margin-bottom: 30px;}
+        #home a {
+            background: white;
+            color: var(--blue);
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        #home a:hover {
+            background: var(--orange);
+            color: white;
+        }
+        /* Services*/
+        #services h2, #pricing h2, #testimonials h2, #order h2, #contact h2 {
+            color: var(--blue);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05));
+            transition: 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        .service h3 {
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+        /* Pricing */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding:  15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: var(--blue);
+            color: white;
+        }
+        /* Testimonials */
+        .testimonial {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15 px rgba(0,0,0,0.05);
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: var(--blue);
+        }
+        /*Order Form */
+        Form {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        Form button {
+            background: var(--orange);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        Form Button:hover {
+            background: var(--blue);
+        }
+        /* Contact */
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            background: white;
+            margin-top: 60px;
+            color: var(--dark-blue);
+            border-top: 2px solid #eee
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Si Joki Cepat</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Layanan</a>
+            <a href="#pricing">Harga</a>
+            <a href="#testimonials">Testimoni</a>
+            <a href="#order">Pemesanan</a>
+            <a href="#Contact">Kontak</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home">
+        <h2>Jasa Joki Tugas Cepat dan Terpercaya</h2>
+        <p>Membantu Anda menyelesaikan tugas dengan cepat dan efisien.</p>
+        <a href="#order">Pesan Sekarang</a>
+    </section>
+    <!-- Services -->
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Joki Tugas Sekolah</h3>
+                <p>Membantu menyelesaikan tugas sekolah dengan cepat dan tepat.</p>
+            </div>
+            <div class="service">
+                <h3>Joki Tugas Kuliah</h3>
+                <p>Solusi cepat untuk tugas kuliah Anda, dari makalah hingga proyek.</p>
+            </div>
+            <div class="service">
+                <h3>Joki Tugas Kantor</h3>
+                <p>Menyelesaikan tugas kantor agar Anda bisa fokus pada hal lain.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing">
+        <h2>Daftar Harga</h2>
+        <table>
+            <tr>
+                <th>Layanan</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>Joki Tugas Sekolah</td>
+                <td>Mulai dari Rp 20.000</td>
+            </tr>
+            <tr>
+                <td>Joki Tugas Kuliah</td>
+                <td>Mulai dari Rp 30.000</td>
+            </tr>
+            <tr>
+                <td>Joki Tugas Kantor</td>
+                <td>Mulai dari Rp 50.000</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial">
+            <p>"Layanan joki tugasnya sangat cepat dan hasilnya memuaskan! Sangat membantu saya dalam menyelesaikan tugas tepat waktu."</p>
+            <span>- Andi, Mahasiswa</span>
+        </div>
+        <div class="testimonial">
+            <p>"Saya sangat puas dengan jasa joki tugas kantor ini. Tugas saya selesai dengan baik dan saya bisa fokus pada pekerjaan lain."</p>
+            <span>- Siti, Karyawan</span>
+        </div>
+    </section>
+    <!-- Order Form -->
+    <section id="order">
+        <h2>Form Pemesanan</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="service" required>
+                <option value="" disabled selected>Pilih Layanan</option>
+                <option value="school">Tugas Harian</option>
+                <option value="college">Tugas Makalah</option>
+                <option value="office">Jasa Ketik</option>
+                <option value="college">Membuat PPT</option>
+                <option value="college">Tugas Artikel</option>
+                <option value="office">Input Data</option>
+                <option value="office">Membuat Modul</option>
+                <option value="office">Tugas Lainnya</option>
+            </select>
+            <input type="date" id="deadline" placeholder="deadline (Tanggal/Bulan/Tahun)" required>
+            <textarea name="details" rows="4" placeholder="Detail Tugas" required></textarea>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <div class="contact-info">
+            <p> WatsApp: 0878-5614-1118</p>
+            <p> Instagram: @si.joki_cepat</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Si Joki Cepat. Jasa Joki Tugas Cepat dan Terpercaya.</p>
+    </footer>
+</body>
+</html>
